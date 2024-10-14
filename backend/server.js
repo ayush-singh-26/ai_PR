@@ -3,7 +3,6 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import axios from 'axios';
 import { Octokit } from '@octokit/rest';
-// Importing Hugging Face Inference if you plan to use it
 // import { HfInference } from '@huggingface/inference';
 
 dotenv.config();
@@ -14,7 +13,6 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// In-memory store for access tokens (for demonstration purposes)
 let userAccessTokens = {};
 
 // GitHub OAuth authorization
